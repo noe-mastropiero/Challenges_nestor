@@ -1,4 +1,4 @@
-package org.services.test;
+package pageObjects;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
@@ -8,9 +8,12 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin={"pretty","html:target/cucumber-reports","json:target/cucumber.json"},
-        features ="src/AcceptanceTest/test/resources/AcceptanceTest",
+        features ={"src/AcceptanceTest/test/resources/AcceptanceTest"},
         glue = {"src.main.java.stepDefinitions"},
         strict = true,
+        dryRun=true,
+        tags={"@RunThis"},
+        monochrome = true,
         snippets = SnippetType.CAMELCASE
 )
 public class CucumberRunnerTest {
