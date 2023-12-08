@@ -16,6 +16,7 @@ log/
 *.ipr
 /bin/
 
+
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -24,6 +25,7 @@ log/
 .settings
 .springBeans
 .sts4-cache
+
 
 ### NetBeans ###
 /nbproject/private/
